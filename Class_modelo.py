@@ -44,7 +44,8 @@ class model_final:
         elif selecao_feature == 'Metodo3':
             X = X.drop(columns=['V13','V15','V22','V23','V24','V25','V26'])
             pp = 'M3'
-
+        else:
+            pp = 'Full'
         #Train e Test Split
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0, stratify=y)
             
