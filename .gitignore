@@ -1,0 +1,4 @@
+# Ignorar arquivos específicos ou padrões de arquivo
+creditcard.csv
+testes/
+*.log
