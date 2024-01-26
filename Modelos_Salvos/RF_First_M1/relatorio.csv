@@ -1,0 +1,2 @@
+,Modelo,Parametros_Modelo,f1score_0,precision_0,recall_0,f1score_1,precision_1,recall_1
+0,RandomForestClassifier,"n_jobs=-1, random_state=0",0.9998323317360724,0.9996823604150491,0.9999823480609344,0.8901734104046243,0.9871794871794872,0.8105263157894737
