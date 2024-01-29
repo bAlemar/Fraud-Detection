@@ -86,8 +86,13 @@ O modelo utilizado foi de Random Forest no seu padrão default do sklearn. Esse 
 
 ### Resultado
 O modelo de Random Forest permitiu um F1-Score de 90% com a seleção de variáveis utilizando Correlação de Pearson e otimização do f1-score por meio do threshold de decisão. 
+<img src="imgs/threshold_f1_score.png" align="center" height=auto width=60%/>
+
 
 Dessa maneira o modelo conseguiu prever cerca de  80 fraudes de 95. Além disso, apenas “pertubou” 2 clientes que foram os únicos falsos positivos. 
+
+<img src="imgs/Resultado_Modelo_m3.png" align="center" height=auto width=60%/>
+
 
 ### Melhorias
 
@@ -128,7 +133,7 @@ Uma vez que você tenha isso instalado, abra um terminal em sua máquina local e
    ```
    **4.2 Windows**
    ```bash
-    source ambiente_virtual\Scripts\activate
+    ambiente_virtual\Scripts\activate
 
 5. **Instale as Dependências:**
 - Instale de acordo com Dashboard que deseja utilizar.
