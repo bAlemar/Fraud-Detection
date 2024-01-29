@@ -45,7 +45,7 @@ Verificando a distribuição das variáveis entre suas classes nota-se que:
 
 (iii) V6, V13, V15, V20, V22, V23, V24, V25, V26, V27 e V28 parecem ter distribuições iguais. 
 
-Apenas a análise visual entre as classes das variáveis não seria suficiente para dizer se há diferença significativa entre as distribuições. Para isso foi utilizado os teste paramétricos e não paramétricos, T-test e U-test, respectivamente. 
+Apenas a análise visual entre as classes das variáveis não seria suficiente para dizer se há diferença significativa entre as distribuições. Para isso foi utilizado os teste paramétricos e não paramétricos, T-test e U-test, respectivamente.  
 
 O resultados dos testes de hipóteses foi: 
 
@@ -55,6 +55,7 @@ U-Test indicou que as variáveis: V13, V15, V22 e V25
 
 Sugere-se então que essas variáveis sejam retiradas a fim de melhorarmos a performance do modelo. 
 
+OBS: [Nesse artigo explico melhor T-Test e U-test](https://medium.com/@balemar/an%C3%A1lise-de-distribui%C3%A7%C3%B5es-para-sele%C3%A7%C3%A3o-de-features-fe6c0cb0c317)
 
 ### Análise de Correlação
 
@@ -67,7 +68,9 @@ A variável 'Time' é diferença de tempo em segundos a partir da primeira trans
 
 <img src="imgs/time_hist_plot.png" align="center" height=auto width=60%/>
 
+\
 Foi feito um plot do seu histograma com seu kde buscando verificar se havia algum padrão para o horário de fraudes. Entretanto, a distribuição mostrou-se sem um padrão definido. Ainda sim, foi feita uma análise para verificar a proporção de fraudes durante o dia e a noite e também não mostrou nenhum padrão significativo.
+
 
 <img src="imgs/time_bin_bar.png" align="center" height=auto width=60%/>
 
@@ -85,6 +88,10 @@ O modelo utilizado foi de Random Forest no seu padrão default do sklearn. Esse 
 O modelo de Random Forest permitiu um F1-Score de 90% com a seleção de variáveis utilizando Correlação de Pearson e otimização do f1-score por meio do threshold de decisão. 
 
 Dessa maneira o modelo conseguiu prever cerca de  80 fraudes de 95. Além disso, apenas “pertubou” 2 clientes que foram os únicos falsos positivos. 
+
+### Melhorias
+
+Sugere a utilização de outros métodos de aprendizado de máquina assim como outras técnicas para tratar/extarir informações das variáveis. O desafio pode ser maior por não conhecermos as variáveis dependentes ainda sim pode-se gerar bons frutos.
 
 
 ## Contato
